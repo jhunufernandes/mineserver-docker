@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  mine:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft
+    hostname: minecraft
+    network_mode: bridge
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: TRUE
+      VERSION: 1.16.3
+      TZ: America/Sao_Paulo
